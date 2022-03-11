@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Products :: Julie – Minimal Fashion Bootstrap 5 Template</title>
+
+    <!--== Favicon ==-->
+    {% include 'includes/generals/inc_main_styles.html' %}
+</head>
+
+
+<body>
+
+<!--wrapper start-->
+<div class="wrapper">
+    {% block navbar %}
+        <!--== Start Preloader Content ==-->
+        {% include 'includes/generals/inc_pre_reload.html' %}
+        <!--== End Preloader Content ==-->
+
+        <!--== Start Header Wrapper ==-->
+        {% include 'includes/generals/inc_navbar.html' %}
+        <!--== End Header Wrapper ==-->
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% block footer %}
+        {% include 'includes/generals/inc_footer.html' %}
+        {% include 'includes/generals/inc_quick_view_menu.html' %}
+        {% include 'includes/generals/inc_side_menu.html' %}
+    {% endblock %}
+
+    {% block extra_js %}
+
+    {% endblock %}
+</div>
+</body>
+
+</html>
