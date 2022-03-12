@@ -1,5 +1,5 @@
 {% extends 'mainapp/base.html' %}
-
+{% load static %}
 {% block content %}
     <main class="main-content">
         <!--== Start Hero Area Wrapper ==-->
@@ -7,7 +7,7 @@
             <div class="swiper-container swiper-slide-gap home-slider-container default-slider-container">
                 <div class="swiper-wrapper home-slider-wrapper slider-default">
                     <div class="swiper-slide">
-                        <div class="slider-content-area" data-bg-img="/static/img/slider/slider-01.jpg">
+                        <div class="slider-content-area" data-bg-img="{% static 'img/slider/slider-01.jpg' %}">
                             <div class="slider-content">
                                 <h5 class="sub-title">BEST PRICE : $866</h5>
                                 <h2 class="title">NEW ARRIVAL</h2>
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slider-content-area" data-bg-img="/static/img/slider/slider-02.jpg">
+                        <div class="slider-content-area" data-bg-img="{% static 'img/slider/slider-02.jpg' %}">
                             <div class="slider-content">
                                 <h5 class="sub-title">BEST PRICE : $866</h5>
                                 <h2 class="title">NEW ARRIVAL</h2>
@@ -133,7 +133,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/1.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/1.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <span class="sale-title sticker">Sale</span>
@@ -181,7 +182,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/2.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/2.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <span class="sale-title sticker">Sale</span>
@@ -230,7 +232,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/3.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/3.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <span class="sale-title sticker">Sale</span>
@@ -278,7 +281,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/4.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/4.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -324,7 +328,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/5.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/5.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -369,7 +374,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/6.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/6.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -415,7 +421,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/7.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/7.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -460,7 +467,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/8.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/8.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -507,7 +515,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/9.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/9.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -552,7 +561,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/11.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/11.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <span class="sale-title sticker">Sale</span>
@@ -601,7 +611,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/13.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/13.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <span class="sale-title bg-theme-color sticker">Soldout</span>
@@ -648,7 +659,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/15.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/15.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -694,7 +706,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/10.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/10.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -739,7 +752,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/12.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/12.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -785,7 +799,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/14.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/14.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -830,7 +845,8 @@
                                                             <div class="inner-content">
                                                                 <div class="product-thumb">
                                                                     <a href="single-product-simple.html">
-                                                                        <img class="w-100" src="/static/img/shop/16.jpg"
+                                                                        <img class="w-100"
+                                                                             src="{% static 'img/shop/16.jpg' %}"
                                                                              alt="Image-HasTech">
                                                                     </a>
                                                                     <div class="product-action">
@@ -890,7 +906,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/5.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/5.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -932,7 +948,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/6.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/6.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -975,7 +991,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/7.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/7.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1017,7 +1033,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/8.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/8.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1061,7 +1077,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/1.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/1.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1106,7 +1122,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/19.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/19.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1154,7 +1170,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/3.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/3.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1199,7 +1215,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/4.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/4.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1247,7 +1263,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/1.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/1.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1292,7 +1308,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/19.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/19.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1340,7 +1356,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/5.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/5.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1382,7 +1398,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/6.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/6.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1425,7 +1441,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/3.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/3.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <span class="sale-title sticker">Sale</span>
@@ -1470,7 +1486,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/4.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/4.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1513,7 +1529,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/7.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/7.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1555,7 +1571,7 @@
                                                 <div class="inner-content">
                                                     <div class="product-thumb">
                                                         <a href="single-product-simple.html">
-                                                            <img class="w-100" src="/static/img/shop/8.jpg"
+                                                            <img class="w-100" src="{% static 'img/shop/8.jpg' %}"
                                                                  alt="Image-HasTech">
                                                         </a>
                                                         <div class="product-action">
@@ -1611,7 +1627,7 @@
                         <!--== Start Single Banner Item ==-->
                         <div class="single-banner-image">
                             <a href="shop.html">
-                                <img class="w-100" src="/static/img/shop/banner/3.jpg" alt="Image-HasTech">
+                                <img class="w-100" src="{% static 'img/shop/banner/3.jpg' %}" alt="Image-HasTech">
                             </a>
                         </div>
                         <!--== End Single Banner Item ==-->
@@ -1620,7 +1636,7 @@
                         <!--== Start Single Banner Item ==-->
                         <div class="single-banner-image mb-0">
                             <a href="shop.html">
-                                <img class="w-100" src="/static/img/shop/banner/4.jpg" alt="Image-HasTech">
+                                <img class="w-100" src="{% static 'img/shop/banner/4.jpg' %}" alt="Image-HasTech">
                             </a>
                         </div>
                         <!--== End Single Banner Item ==-->
@@ -1650,7 +1666,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/1.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/1.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <span class="sale-title sticker">Sale</span>
                                                 <span class="percent-count sticker">-18%</span>
@@ -1695,7 +1712,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/5.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/5.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -1737,7 +1755,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/2.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/2.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <span class="sale-title sticker">Sale</span>
                                                 <span class="percent-count sticker">-15%</span>
@@ -1782,7 +1801,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/6.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/6.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -1824,7 +1844,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/3.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/3.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <span class="sale-title sticker">Sale</span>
                                                 <span class="percent-count sticker">-27%</span>
@@ -1869,7 +1890,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/7.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/7.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -1911,7 +1933,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/4.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/4.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -1953,7 +1976,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/8.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/8.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -1996,7 +2020,8 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/9.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/shop/9.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
                                                     <div class="addto-wrap">
@@ -2038,7 +2063,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/10.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/10.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
@@ -2081,7 +2106,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/11.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/11.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <span class="sale-title sticker">Sale</span>
@@ -2127,7 +2152,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/12.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/12.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
@@ -2170,7 +2195,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/13.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/13.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <span class="sale-title bg-theme-color sticker">Soldout</span>
@@ -2215,7 +2240,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/14.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/14.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
@@ -2258,7 +2283,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/15.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/15.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
@@ -2301,7 +2326,7 @@
                                         <div class="inner-content">
                                             <div class="product-thumb">
                                                 <a href="single-product-simple.html">
-                                                    <img class="w-100" src="/static/img/shop/16.jpg"
+                                                    <img class="w-100" src="{% static 'img/shop/16.jpg' %}"
                                                          alt="Image-HasTech">
                                                 </a>
                                                 <div class="product-action">
@@ -2361,7 +2386,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/1.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/1.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2369,7 +2394,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/2.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/2.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2377,7 +2402,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/3.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/3.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2385,7 +2410,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/4.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/4.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2393,7 +2418,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/5.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/5.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2401,7 +2426,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/6.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/6.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2409,7 +2434,7 @@
                                     <div class="swiper-slide">
                                         <!--== Start Brand Logo Item ==-->
                                         <div class="brand-logo-item">
-                                            <a href="shop.html"><img src="/static/img/brand-logo/7.jpg"
+                                            <a href="shop.html"><img src="{% static 'img/brand-logo/7.jpg' %}"
                                                                      alt="Image-HasTech"></a>
                                         </div>
                                         <!--== End Brand Logo Item ==-->
@@ -2443,7 +2468,8 @@
                                         <div class="inner-content">
                                             <div class="thumb">
                                                 <a href="single-blog.html">
-                                                    <img class="w-100" src="/static/img/blog/1.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/blog/1.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                             </div>
                                             <div class="content">
@@ -2468,7 +2494,8 @@
                                         <div class="inner-content">
                                             <div class="thumb">
                                                 <a href="single-blog.html">
-                                                    <img class="w-100" src="/static/img/blog/2.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/blog/2.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                             </div>
                                             <div class="content">
@@ -2493,7 +2520,8 @@
                                         <div class="inner-content">
                                             <div class="thumb">
                                                 <a href="single-blog.html">
-                                                    <img class="w-100" src="/static/img/blog/3.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/blog/3.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                             </div>
                                             <div class="content">
@@ -2518,7 +2546,8 @@
                                         <div class="inner-content">
                                             <div class="thumb">
                                                 <a href="single-blog.html">
-                                                    <img class="w-100" src="/static/img/blog/1.jpg" alt="Image-HasTech">
+                                                    <img class="w-100" src="{% static 'img/blog/1.jpg' %}"
+                                                         alt="Image-HasTech">
                                                 </a>
                                             </div>
                                             <div class="content">

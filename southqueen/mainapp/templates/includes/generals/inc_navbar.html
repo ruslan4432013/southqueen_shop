@@ -1,24 +1,25 @@
+{% load static %}
 <header class="header-area sticky-header header-default">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-6 col-sm-4 col-lg-3">
                 <div class="header-logo-area">
-                    <a href="index.html">
-                        <img class="logo-main" src="/static/img/logo.png" alt="Logo"/>
-                        <img class="logo d-none" src="/static/img/logo-light.png" alt="Logo"/>
+                    <a href="{% url 'main' %}">
+                        <img class="logo-main" src="{% static 'img/logo.png' %}" alt="Logo"/>
+                        <img class="logo d-none" src="{% static 'img/logo-light.png' %}" alt="Logo"/>
                     </a>
                 </div>
             </div>
             <div class="col-sm-4 col-lg-7 d-none d-lg-block">
                 <div class="header-navigation-area">
                     <ul class="main-menu nav position-relative">
-                        <li class="has-submenu"><a href="#/">Home</a>
+                        <li class="has-submenu"><a href="{% url 'main' %}">Home</a>
                             <ul class="submenu-nav">
                                 <li><a href="index.html">Home Demo 1</a></li>
                                 <li><a href="index-two.html">Home Demo 2</a></li>
                             </ul>
                         </li>
-                        <li class="has-submenu full-width"><a href="#/">Shop</a>
+                        <li class="has-submenu full-width"><a href="{% url 'products' %}">Shop</a>
                             <ul class="submenu-nav submenu-nav-mega">
                                 <li class="mega-menu-item"><a href="#/" class="mega-title">Shop Layouts</a>
                                     <ul>
@@ -50,7 +51,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-submenu"><a href="#/">Products</a>
+                        <li class="has-submenu"><a href="{% url 'products' %}">Products</a>
                             <ul class="submenu-nav">
                                 <li><a href="single-product-simple.html">Simple Product</a></li>
                                 <li><a href="single-product.html">Variable Product</a></li>
@@ -68,7 +69,7 @@
                                 <li><a href="single-blog-right-sidebar.html">Single Blog Right Sidebar</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
                         <li><a href="about-us.html">About</a></li>
                     </ul>
                 </div>
@@ -113,7 +114,7 @@
                             <div class="mini-cart-dropdown">
                                 <div class="cart-item">
                                     <div class="thumb">
-                                        <img class="w-100" src="/static/img/shop/cart/1.jpg" alt="Image-HasTech">
+                                        <img class="w-100" src="{% static 'img/shop/cart/1.jpg' %}" alt="Image-HasTech">
                                     </div>
                                     <div class="content">
                                         <h5 class="title"><a href="#/">Literature Classical - s</a></h5>
@@ -124,7 +125,7 @@
                                 </div>
                                 <div class="cart-item">
                                     <div class="thumb">
-                                        <img class="w-100" src="/static/img/shop/cart/2.jpg" alt="Image-HasTech">
+                                        <img class="w-100" src="{% static 'img/shop/cart/2.jpg' %}" alt="Image-HasTech">
                                     </div>
                                     <div class="content">
                                         <h5 class="title"><a href="#/">Fit Wool Suit - m / gold</a></h5>
