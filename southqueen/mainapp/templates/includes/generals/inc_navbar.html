@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-6 col-sm-4 col-lg-3">
                 <div class="header-logo-area">
-                    <a href="{% url 'main' %}">
+                    <a href="{% url 'products:index' %}">
                         <img class="logo-main" src="{% static 'img/logo.png' %}" alt="Logo"/>
                         <img class="logo d-none" src="{% static 'img/logo-light.png' %}" alt="Logo"/>
                     </a>
@@ -13,13 +13,13 @@
             <div class="col-sm-4 col-lg-7 d-none d-lg-block">
                 <div class="header-navigation-area">
                     <ul class="main-menu nav position-relative">
-                        <li class="has-submenu"><a href="{% url 'main' %}">Home</a>
+                        <li class="has-submenu"><a href="{% url 'products:index' %}">Home</a>
                             <ul class="submenu-nav">
                                 <li><a href="index.html">Home Demo 1</a></li>
                                 <li><a href="index-two.html">Home Demo 2</a></li>
                             </ul>
                         </li>
-                        <li class="has-submenu full-width"><a href="{% url 'products' %}">Shop</a>
+                        <li class="has-submenu full-width"><a href="{% url 'products:categories' %}">Shop</a>
                             <ul class="submenu-nav submenu-nav-mega">
                                 <li class="mega-menu-item"><a href="#/" class="mega-title">Shop Layouts</a>
                                     <ul>
@@ -51,7 +51,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="has-submenu"><a href="{% url 'products' %}">Products</a>
+                        <li class="has-submenu"><a href="{% url 'products:categories' %}">Products</a>
                             <ul class="submenu-nav">
                                 <li><a href="single-product-simple.html">Simple Product</a></li>
                                 <li><a href="single-product.html">Variable Product</a></li>
