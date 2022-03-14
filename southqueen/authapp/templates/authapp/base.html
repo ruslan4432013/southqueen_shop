@@ -1,0 +1,36 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <main class="main-content">
+        {% include 'includes/generals/inc_page_header.html' %}
+        <!--== End Page Header Area Wrapper ==-->
+
+        <!--== Start Account Area Wrapper ==-->
+        <section class="account-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 m-auto">
+                        <div class="account-form-wrap">
+                            <!--== Start Login Form ==-->
+                            <div class="login-form">
+                                <div class="content">
+                                    <h4 class="title">{{ title|title }}</h4>
+                                    <p>Please login using account detail bellow.</p>
+                                </div>
+                                {% block auth_form %}
+                                {% endblock %}
+                            </div>
+                            <!--== End Login Form ==-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--== End Account Area Wrapper ==-->
+    </main>
+{% endblock %}
+
+
+{% block extra_js %}
+    {% include 'includes/authapp/inc_javascript.html' %}
+{% endblock %}

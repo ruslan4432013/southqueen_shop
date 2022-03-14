@@ -1,0 +1,35 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+
+{% block auth_form %}
+
+    <form action="{% url 'auth:login' %}" method="post">
+        {% csrf_token %}
+        <div class="form-error">{{ edit_form.non_field_errors }}</div>
+        <div class="row">
+            {% for form in login_form %}
+                <div class="col-12">
+                    <div class="form-group">
+                        <p><label class="form-label"
+                                  for="{{ form.id_for_label }}">{{ form.label }}: </label>{{ form }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="col-12">
+                <div class="login-form-group">
+                    <button class="btn-sign" type="submit">Sign In</button>
+                    <a class="btn-pass-forgot" href="#/">Forgot your password?</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="account-optional-group">
+                    <a class="btn-create" href="{% url 'auth:register' %}">Create account</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
+
+
