@@ -48,7 +48,7 @@
                                 <div class="tab-pane fade show active" id="nav-grid" role="tabpanel"
                                      aria-labelledby="nav-grid-tab">
                                     <div class="row">
-                                        {% for product in products %}
+                                        {% for product in some_products %}
                                             {% include 'includes/shop/inc_shop_cart_item.html' with product=product %}
                                         {% endfor %}
                                     </div>
@@ -617,7 +617,7 @@
                                 <h4 class="product-sidebar-title">Categories</h4>
                                 <div class="product-sidebar-body">
                                     <div class="product-sidebar-nav-menu">
-                                        {% for category in categories %}
+                                        {% for category in links_menu %}
                                         <a href="{% url 'products:category' pk=category.pk %}">{{ category.name }} <span>(16)</span></a>
                                         {% endfor %}
                                     </div>

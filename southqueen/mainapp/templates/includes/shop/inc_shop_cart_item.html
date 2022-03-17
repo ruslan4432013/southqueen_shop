@@ -9,7 +9,7 @@
                 </a>
                 <div class="product-action">
                     <div class="addto-wrap">
-                        <a class="add-cart" href="cart.html">
+                        <a class="add-cart" href="{% url 'basket:add' product.pk %}">
                             <i class="zmdi zmdi-shopping-cart-plus icon"></i>
                         </a>
                         <a class="add-wishlist" href="wishlist.html">

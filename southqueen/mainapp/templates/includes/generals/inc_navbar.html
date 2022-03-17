@@ -13,51 +13,25 @@
             <div class="col-sm-4 col-lg-7 d-none d-lg-block">
                 <div class="header-navigation-area">
                     <ul class="main-menu nav position-relative">
-                        <li class="has-submenu"><a href="{% url 'products:index' %}">Home</a>
+                        <li class="has-submenu {% if request.resolver_match.url_name == 'index' %}active{% endif %}"><a
+                                href="{% url 'products:index' %}">Home</a>
                             <ul class="submenu-nav">
                                 <li><a href="index.html">Home Demo 1</a></li>
                                 <li><a href="index-two.html">Home Demo 2</a></li>
                             </ul>
                         </li>
-                        <li class="has-submenu full-width"><a href="{% url 'products:categories' %}">Shop</a>
-                            <ul class="submenu-nav submenu-nav-mega">
-                                <li class="mega-menu-item"><a href="#/" class="mega-title">Shop Layouts</a>
-                                    <ul>
-                                        <li><a href="shop-3-grid.html">Shop 3 Column</a></li>
-                                        <li><a href="shop-4-grid.html">Shop 4 Column</a></li>
-                                        <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                        <li><a href="shop.html">Shop Right Sidebar</a></li>
-                                        <li><a href="shop-list.html">Shop Listing View</a></li>
-                                        <li><a href="shop-list-left-sidebar.html">Shop List left Sidebar</a></li>
-                                        <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li class="mega-menu-item"><a href="#/" class="mega-title">Shop Pages</a>
-                                    <ul>
-                                        <li><a href="login.html">My Account</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                    </ul>
-                                </li>
-                                <li class="mega-menu-item"><a href="#/" class="mega-title">WOMEN</a>
-                                    <ul>
-                                        <li><a href="single-product-name-1.html">Bags &amp; Purses</a></li>
-                                        <li><a href="single-product-name-1.html">Beauty</a></li>
-                                        <li><a href="single-product-name-1.html">Coats &amp; Jackets</a></li>
-                                        <li><a href="single-product-name-1.html">Curve &amp; Plus Size</a></li>
-                                        <li><a href="single-product-name-1.html">Denim</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu"><a href="{% url 'products:categories' %}">Products</a>
+                        <li class="has-submenu {% if request.resolver_match.url_name == 'categories' %}active{% endif %}">
+                            <a
+                                    href="{% url 'products:categories' %}">Products</a>
                             <ul class="submenu-nav">
-                                <li><a href="single-product-simple.html">Simple Product</a></li>
-                                <li><a href="single-product.html">Variable Product</a></li>
-                                <li><a href="single-product-affiliate.html">Affiliate Link product</a></li>
-                                <li><a href="single-product-soldout.html">Soldout Product</a></li>
-                                <li><a href="single-product-countdown.html">Countdown Product</a></li>
+                                <li class="{% if request.resolver_match.url_name == 'categories' %}active{% endif %}">
+                                    <a href="{% url 'products:categories' %}">Все</a>
+                                </li>
+                                {% for link in links_menu %}
+                                    <li class="{% if request.resolver_match.kwargs.pk|slugify == link.pk|slugify %}active{% endif %}">
+                                        <a href="{% url 'products:category' link.pk %}">{{ link.name }}</a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </li>
                         <li class="has-submenu"><a href="#/">Blog</a>
@@ -69,7 +43,8 @@
                                 <li><a href="single-blog-right-sidebar.html">Single Blog Right Sidebar</a></li>
                             </ul>
                         </li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"><a
+                                href="{% url 'contact' %}">Contact</a></li>
                         <li><a href="about-us.html">About</a></li>
                     </ul>
                 </div>
@@ -119,9 +94,9 @@
                             </ul>
                         </li>
                         <li class="mini-cart">
-                            <a class="action-item" href="#/">
+                            <a class="action-item" href="{% url 'basket:view' %}">
                                 <i class="zmdi zmdi-shopping-cart-plus icon"></i>
-                                <span class="cart-quantity">2</span>
+                                <span class="cart-quantity">{% if basket %}{{ basket.0.total_quantity }}{% endif %}</span>
                             </a>
                             <div class="mini-cart-dropdown">
                                 <div class="cart-item">
@@ -147,10 +122,10 @@
                                     </div>
                                 </div>
                                 <div class="cart-total-money">
-                                    <h5>Total: <span class="money">$159.00</span></h5>
+                                    <h5>Total: <span class="money">{{ basket.0.total_cost }} руб.</span></h5>
                                 </div>
                                 <div class="cart-btn">
-                                    <a href="cart.html">View Cart</a>
+                                    <a href="{% url 'basket:view' %}">View Cart</a>
                                     <a href="checkout.html">Checkout</a>
                                 </div>
                             </div>

@@ -1,0 +1,84 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="main-content">
+        <!--== Start Page Header Area Wrapper ==-->
+        {% include 'includes/generals/inc_page_header.html' %}
+
+
+        <!--== Start Product Area Wrapper ==-->
+<section class="product-area product-inner-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="product-header-wrap d-md-flex justify-content-md-between align-items-center">
+              <div class="grid-list-option">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link" id="nav-grid-tab" data-bs-toggle="tab" data-bs-target="#nav-grid" type="button" role="tab" aria-controls="nav-grid" aria-selected="false"><i class="fa fa-th"></i></button>
+                    <button class="nav-link active" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-list" aria-selected="true"><i class="fa fa-th-list"></i></button>
+                  </div>
+                </nav>
+              </div>
+              <div class="nav-short-area d-md-flex align-items-center">
+                <p class="show-product">Showing 1 - 18 of 33 result</p>
+                <div class="toolbar-shorter">
+                  <label for="SortBy">Sort by</label>
+                  <select id="SortBy" class="form-select" aria-label="Sort by">
+                    <option value="manual">Featured</option>
+                    <option value="best-selling">Best Selling</option>
+                    <option value="title-ascending" selected="">Alphabetically, A-Z</option>
+                    <option value="title-descending">Alphabetically, Z-A</option>
+                    <option value="price-ascending">Price, low to high</option>
+                    <option value="price-descending">Price, high to low</option>
+                    <option value="created-descending">Date, new to old</option>
+                    <option value="created-ascending">Date, old to new</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="product-body-wrap">
+              <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab">
+                  <div class="row">
+                    {% for product in products %}
+                        {% include 'includes/shop/inc_shop_cart_item_list.html' with product=product %}
+                      {% endfor %}
+
+                  </div>
+                  <!--== Start Pagination Wrap ==-->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="pagination-content-wrap border-top">
+                        <nav class="pagination-nav">
+                          <ul class="pagination justify-content-center">
+                            <li><a class="disabled active prev" href="shop-list.html">Prev</a></li>
+                            <li><a class="disabled active" href="shop-list.html">1</a></li>
+                            <li><a href="shop-list.html">2</a></li>
+                            <li><a href="shop-list.html">3</a></li>
+                            <li><a href="shop-list.html">...</a></li>
+                            <li><a href="shop-list.html">5</a></li>
+                            <li><a class="next" href="shop-list.html">Next</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Pagination Wrap ==-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!--== End Product Area Wrapper ==-->
+    </main>
+{% endblock %}
+
+<!--=======================Javascript============================-->
+
+{% block extra_js %}
+    {% include 'includes/shop/inc_javascript.html' %}
+{% endblock %}
